@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+* {
+    box-sizing: border-box;
+    
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 10%;
+}
+
+.ftWrap {
+    padding: 1rem 0;
+    display: flex;
+    min-width: 100%;
+    max-height: 24rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #222324
+}
+
+
+.navLinks{
+    list-style: none;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+
+    /* transform: rotateZ(90deg) translateX(5rem) translateY(-3.5rem);  */
+    /* transform-origin: left top; */
+}
+
+.navLinks a {
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    padding: 0.3rem
+}
+
+.navLinks a:hover {
+    opacity: 0.8;
+}
+
+
+.contDet {
+
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.contDet a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6;
+}
+
+.contDet :hover{
+    opacity: 0.9;
+}
+
+
+.svgIc {
+    width:36px;
+    height:36px;
+    padding-right: 1rem;
+    opacity: 0.8;
+}
+
+
+.rasLogo{
+    /* margin-top: 1rem; */
+    width: 12rem;
+}
+
+
+
+
+
+@media (min-width: 500px)  {
+    .ftWrap {
+        padding: 3rem 4rem;
+        flex-direction: row;
+        height: 30vh;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .navLinks {
+        padding: 0rem 0;
+        flex-direction: row;
+    }
+
+    .rasLogo {
+        margin: 0;
+    }
+
+}
+
+
+
+

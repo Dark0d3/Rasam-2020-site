@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+.Toolbar {
+    min-width: 100%;
+    /* right: 0; */
+    /* left: 1rem; */
+    padding: 0rem 1rem;
+    /* justify-content: center; */
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    /* right:3rem; */
+    /* top: 1rem; */
+    background: #090a0b;
+    /* position: fixed; */
+    height:64px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+
+.Toolbar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: 1000;
+    width: 40px;
+    height: 60px;
+  }
+
+.Toolbar::after {
+    right: 0;
+    background: linear-gradient(to right, transparent 0%, #090a0b88 30%, #090a0bBB 70%, #090a0bEE 100%);
+  }
+
+
+.Logo {
+    display: block;
+    /* transform: rotateZ(-90deg); */
+    height: 2.2rem;
+}
+
+.Space {
+    display: block;
+    min-width: 1.2rem;
+    height: 60px;
+}
+
+@media (min-width: 640px) {
+    /* .DesktopOnly {
+        display: none;
+    } */
+
+    .Space {
+        display: none;
+    }
+
+    .Logo {
+        display: block;
+        transform: rotateZ(-90deg);
+        height: 100%;
+        /* transform: rotateZ(0deg);
+        justify-self: flex-start; */
+    }
+
+    .Toolbar {
+        position: absolute;
+        padding: 0;
+        justify-content: center;
+        background-color: transparent;
+        height: 80px;
+        /* z-index: 100000; */
+        min-width: 0;
+        /* height: 100%;
+        width: 100%; */
+        top: 42px;
+        /* left: 120rem; */
+        /* right: -290px; */
+        right: -370px;
+        transform: rotateZ(90deg);
+        transform-origin: left top;
+    }
+
+    .Toolbar::after {
+        display: none;
+    }
+} 

@@ -1,0 +1,49 @@
+body{
+    margin:0;
+    border:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:1rem;
+    font-weight:normal;
+    line-height:1.5;
+    color:#333;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+    background-color: #121212;
+    /* background: url(../../content/bg/grbl.jpg) */
+}
+
+.vid{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translate(-50%, -50%);
+}
+
+/* .mobVid {
+    display: none;
+} */
+
+@media (max-width: 1200px) {
+    /* .vid {
+        display: none;
+    } */
+    .mobVid{
+        display: inline-block;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+        transform: translate(-50%, -50%);
+    }
+
+}

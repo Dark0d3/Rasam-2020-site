@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:500&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    background-color: #121212;
+}
+
+.evWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroTitleWrap {
+    /* height: 80%; */
+    min-width: 100%;
+}
+
+.heroTitle {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    top: 25%;
+    font-size: 4rem;
+    font-family: Oswald;
+    letter-spacing: 6px;
+}
+
+.heroCont{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    width: 90%;
+    padding: 0 1.5rem; 
+}
+
+.heroContSrch {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.heroContSrchIt {
+    margin: 1rem 1rem;
+    padding: 0.5rem;
+    width: 7rem;
+    text-align: center;
+    border-radius: 16px;
+    border: solid 2px rgba(255, 255, 255, 0.905);
+    font-family: 'Raleway', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.805);
+}
+
+.heroContSrchIt:hover {
+    cursor: pointer;
+    border: solid 2px rgba(255, 255, 255, 0.999);
+    color: rgba(255, 255, 255, 0.999);
+}
+
+/** FOOTER CODE **/
+
+
+.ftWrap {
+    padding: 1rem 0;
+    display: flex;
+    min-width: 100%;
+    max-height: 24rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #222324
+}
+
+
+.navLinks{
+    list-style: none;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: flex-start;
+
+    /* transform: rotateZ(90deg) translateX(5rem) translateY(-3.5rem);  */
+    /* transform-origin: left top; */
+}
+
+.navLinks a {
+    font-family: 'Montserrat', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    padding: 0.3rem
+}
+
+.navLinks a:hover {
+    opacity: 0.8;
+}
+
+
+.contDet {
+
+    padding: 0.5rem 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.contDet a{
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    opacity: 0.6;
+}
+
+.contDet :hover{
+    opacity: 0.9;
+}
+
+
+.svgIc {
+    width:36px;
+    height:36px;
+    padding-right: 1rem;
+    opacity: 0.8;
+}
+
+
+.rasLogo{
+    width: 12rem;
+}
+
+/** END OF FOOTER CODE **/
+
+
+@media (min-width: 640px) {
+    .heroTitle {
+        font-size: 12rem;
+        top: 35%;
+    }
+
+    .heroTitleWrap {
+        background: linear-gradient(90deg, rgba(2,0,36,0) 80%, rgba(18,18,18,0.8) 100%);
+    }
+
+    .heroCont {
+        position: relative;
+        /* top: 40rem; */
+        justify-content: space-around;
+    }
+
+    .heroContSrch {
+        position: relative;
+        top: -5rem;
+        width: 60%;
+        /* top: 35rem; */
+    }
+
+    .heroContSrchIt {
+        padding: 0.5rem;
+        width: 10rem;
+        font-size: 1rem;
+    }
+
+    /** FOOTER CODE **/
+    .ftWrap {
+        padding: 3rem 4rem;
+        flex-direction: row;
+        height: 30vh;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .navLinks {
+        padding: 0rem 0;
+        flex-direction: row;
+    }
+
+    .rasLogo {
+        margin: 0;
+    }
+    /** END OF FOOTER CODE **/
+}
+
+
+
+@media (min-width: 768px) AND (min-height: 1024px) {
+    .heroTitle {
+        font-size: 10rem;
+        top: 20%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .heroTitle {
+        top: 50%;
+    }
+
+    .heroCont {
+        top: -7rem;
+    }
+
+    .heroContSrch {
+        top: -9rem;
+        /* top: 35rem; */
+    }
+}
+
+@media (min-width: 1440px) {
+    .heroCont {
+        top: -18rem;
+    }
+
+    .heroContSrch {
+        top: -20rem;
+        /* top: 35rem; */
+    }
+}
+

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+.cardThing {
+    margin: 1rem;
+    display: flex;
+    width: 200px;
+    height: 320px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grad {
+    position: absolute;
+    height: 320px;
+    width: 200px;
+    border-radius: 1rem;
+    /* background: #2F2F2F4D; */
+    background: linear-gradient(180deg, rgba(2,0,36,0) 33%, rgba(47,47,47,0.5010154403558299) 100%);
+    z-index: 10;
+    transition: all 600ms ease;
+}
+/* 
+.cardImStyles {
+    min-height: 320px;
+    max-width: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+} */
+
+.cardCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    width: 170px;
+    height: 270px;
+    z-index: 100;
+}
+
+.cardConTitle {
+    font-family: 'Playfair Display';
+    text-align: center;
+    /* height: 2rem; */
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: bold;
+    /* font-weight: 600; */
+    letter-spacing: 1px;
+    z-index: 100;
+    color: white;
+    transition: all 500ms ease;
+}
+
+.cardConTx{
+    display: block;
+    position: absolute;
+    opacity: 0;
+    font-family: 'Montserrat';
+    font-size: 1rem;
+    font-weight: 250;
+    z-index: 100;
+    color: white;
+    text-align: center;
+    transition: all 500ms ease;
+}
+
+/* .cardThing:hover .cardCon {
+    align-items: flex-start;
+} */
+
+.cardThing:hover {
+    cursor: pointer;
+}
+
+.cardThing:hover .grad{
+    cursor: pointer;
+    background: #2F2F2F7D;
+}
+
+.cardThing:hover .cardConTitle {
+    transform: translateY(-205px);
+}
+
+.cardThing:hover .cardConTx {
+    position: realtive;
+    opacity: 1;
+    transform: translateY(-80px);
+}
+
+

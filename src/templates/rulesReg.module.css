@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    color: #F3F5F7;
+    background-color: #121212;
+}
+
+.rulesWrap {
+    color: #F3F5F7;
+    margin: 1rem;
+    padding: 1rem;
+    width: 90%;
+}
+
+.mainTitle {
+    color: #F3F5F7;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.evTitle {
+    color: #F3F5F7;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+@media (min-width: 640px) {
+    .mainTitle {
+        font-size: 4rem;
+    }
+
+    .evTitle {
+        color: #F3F5F7;
+        font-size:2rem;
+        font-weight: 300;
+    }
+}

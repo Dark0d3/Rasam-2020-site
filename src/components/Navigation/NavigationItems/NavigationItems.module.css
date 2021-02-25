@@ -1,0 +1,27 @@
+.NavigationItems {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    align-items: center;
+    height: 100%;
+    font-family: 'Raleway', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    /* transform: rotateZ(90deg) translateX(5rem) translateY(-3.5rem);  */
+    /* transform-origin: left top; */
+}
+
+
+
+
+
+/* @media (min-width: 600px) {
+    .NavigationItems {
+        flex-flow: row;
+        width: 100%;
+    }
+} */
